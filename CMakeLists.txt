@@ -3,4 +3,4 @@ project(untitled3)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(untitled3 main.cpp Menu.h)
+add_executable(untitled3 main.cpp Menu.h Cout.h)

@@ -1,5 +1,5 @@
-#include <iostream>
-
+#pragma once
+#include "Cout.h"
 namespace menu {
 
     void menuMain() {
@@ -22,7 +22,8 @@ namespace calcul {
         int jour = 0;
         std::cout << "Entrez nombre de jours a utiliser pour le calcul" << std::endl;
         std::cin >> jour;
-rr
+
+
     }
 
 

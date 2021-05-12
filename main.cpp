@@ -1,26 +1,29 @@
 #include <iostream>
 #include <cmath>
-#include "eau.h"
 #include "Menu.h"
+#include "Cout.h"
+
 
 int main() {
 
+    Cout* tab1[250];
     int choix = 0;
     bool fin = false;
-
     while (!fin) {
         menu::menuMain();
-        std::cout << "\nFaites votre choix: "<< std::endl;
+        std::cout << "\nFaites votre choix: " << std::endl;
         std::cin >> choix;
         switch (choix) {
 
             case 0:
-                std::cout << "Fin de l'application!"<< std::endl;
+                std::cout << "Fin de l'application!" << std::endl;
                 fin = true;
                 break;
             case 1:
                 //Ajouter un coût de location avec ses informations
-                std::cout << "allo1\n";
+                for (int i = 0; i<sizeof(tab1);i++) {
+                    tab1[i]->entrezEspaceMachine();
+                }
                 break;
             case 2:
                 //Ajouter un coût en électricité avec ses informations
@@ -41,4 +44,3 @@ int main() {
         }
 
     }
-}
